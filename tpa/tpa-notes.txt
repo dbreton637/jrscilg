@@ -1,0 +1,2 @@
+Directory for work with BMP280 temperature, pressure and altitude sensor
+with Circuit Playground Express.
