@@ -1,5 +1,4 @@
-# Lyme Hill, 11 Jan 2020, river to summit
-# Time(sec),Temp(C),Press(hPa),Altitude(m)
+time,temp,press,alt
 776,5.9,1004.4,120.73
 836,5.6,1003.4,128.62
 896,4.6,1002.7,135.53
