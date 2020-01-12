@@ -6,4 +6,6 @@ Data files are CSV files: uphill_data.csv and dnhill_data.csv
 uphill_data.csv is starts, unfortunately, at 776 seconds rather than 0, so a little finagling is required in the plotting code
 
 VISUALIZATION
-We are trying to plot this data straight from the mu editor using the script tpa-plot.py
+We are trying to plot this data straight from the mu editor using the script tpa-plot.py.
+I created some temporary plots using gnuplot, but in the end, we'd like to show how to do this in Python.
+However, this is NOT working on my linux box, perhaps the windows install includes matplotlib??
