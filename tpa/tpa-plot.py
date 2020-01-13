@@ -13,8 +13,8 @@ fpath = path+fname
 print("Opening %s..." % fpath)
 time,temp,press,alt = np.loadtxt(fpath, delimiter=',', unpack=True, skiprows=1)
 
-# fix an "oops" in the data, which starts at 767 by mistake
-time = time -776
+# fix an "oops" in the data, which starts at second 776 by mistake
+time = time - 776  # subtracts 776 from all time values... so data will start at time=0
 
 # plot the data.  
 plt.plot(time/60.0, press)  # convert time into minutes to make plot easier to interpret
