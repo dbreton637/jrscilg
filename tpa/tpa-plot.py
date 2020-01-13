@@ -8,19 +8,22 @@ path = 'C:\\Users\\rdcrldjb\\Documents\\cktPython\\jrscilg-master\\tpa\\'
 fname = 'uphill_data.csv'
 fpath = path+fname
 
-# open file and store data into arrays time, temp, press and alt(itude)
+# open file and store data into arrays:
+# time (sec), temp (C), press (hPa) and altitude (m)
 print("Opening %s..." % fpath)
 time,temp,press,alt = np.loadtxt(fpath, delimiter=',', unpack=True, skiprows=1)
 
 # fix an "oops" in the data, which starts at 767 by mistake
 time = time -776
 
-# plot the data
-plt.plot(time/60.0,press)
+# plot the data.  
+plt.plot(time/60.0, press)  # convert time into minutes to make plot easier to interpret
 
 # label the axes
 plt.xlabel('Elapsed time, min')
 plt.ylabel('Pressure, hPa')
+
+# make a title
 plt.title('Air pressure during ascent of Lyme Hill, 11 Jan 2020')
 
 # show the plot in an interactive window
